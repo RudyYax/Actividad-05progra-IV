@@ -1,9 +1,12 @@
 class Estudiante:
-    def __init__(self, nombre, carnet, carrera, NotaFinal):
+    def __init__(self, nombre, carnet, carrera, notaFinal):
         self.nombre = nombre
         self.carnet = carnet
         self.carrera = carrera
-        self.NotaFinal = NotaFinal
+        self.notaFinal = notaFinal
+    def Informacion(self):
+        print(f"Soy el estudiante {self.nombre}, con numero de carné {self.carnet} y curso la carrera de {self.carrera}")
+
 
 
 print("Actividad 05")
