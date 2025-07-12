@@ -25,7 +25,7 @@ while(opcion != 5):
         case 1:
             nombre =input("Ingrese el Nombre del estudiante: ")
             carnet = input("Ingrese el carné del estudiante: ")
-            carrera = input("Ingrese la carrera del estudiante: ")
+            carrera = input("Ingrese la carrera del estudiante:  ")
             NotaFinal = int(input("Ingrese la nota final del Estudiante: "))
             estudiante = Estudiante(nombre, carnet, carrera, NotaFinal)
             estudiantes.append(estudiante)
