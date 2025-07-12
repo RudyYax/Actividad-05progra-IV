@@ -24,7 +24,7 @@ while(opcion != 5):
     match opcion:
         case 1:
             nombre =input("Ingrese el Nombre del estudiante: ")
-            carnet = int(input("Ingrese el carné del estudiante: "))
+            carnet = input("Ingrese el carné del estudiante: ")
             carrera = input("Ingrese la carrera del estudiante: ")
             NotaFinal = int(input("Ingrese la nota final del Estudiante: "))
             estudiante = Estudiante(nombre, carnet, carrera, NotaFinal)
@@ -37,16 +37,14 @@ while(opcion != 5):
                     estudiante.Informacion()
         case 3:
             print("BUSQUEDA POR NUNERO DE CARNET")
-            buscar = input("Ingrese el carnet del estudiante: ")
-            encontrar = False
+            buscar = input("Ingrese el carné del estudiante: ")
+            encontrado = False
             for estudiante in estudiantes:
-                if estudiante == buscar:
+                if estudiante.carnet == buscar:
                     estudiante.Informacion()
+                    estudiante.Notafinal()
                     encontrado = True
-                    break;
+                    break
             if not encontrado:
-                print("El estudiante no existe o no fue encontrado")
-
-
-
+                print("El estudiante no existe o no fue encontrado.")
 
