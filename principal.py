@@ -10,12 +10,17 @@ class Estudiante:
     def Notafinal(self):
         print (f"La Nota Final es {self.notaFinal}")
 
+estudiantes = []
+opcion = 0
+while(opcion != 5):
+    print("Actividad 05")
+    print("Bienvenido a nuestro programa.")
+    print("1.- Registrar un nuevo estudiante")
+    print("2.- Mostrar lista de todos los estudiantes registrados")
+    print("3.- Buscar un estudiante por su Carné")
+    print("4.- Calcular el promedio de notas de todos los estudiantes")
+    opcion = int(input("Seleccione la opcion que desea "))
 
+    match opcion:
+        case 1:
 
-print("Actividad 05")
-print("Bienvenido a nuestro programa.")
-print("1.- Registrar un nuevo estudiante")
-print("2.- Mostrar lista de todos los estudiantes registrados")
-print("3.- Buscar un estudiante por su Carné")
-print("4.- Calcular el promedio de notas de todos los estudiantes")
-print("Seleccione la opcion que deseea ")
