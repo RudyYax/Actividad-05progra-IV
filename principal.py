@@ -37,6 +37,15 @@ while(opcion != 5):
                     estudiante.Informacion()
         case 3:
             print("BUSQUEDA POR NUNERO DE CARNET")
+            buscar = input("Ingrese el carnet del estudiante: ")
+            encontrar = False
+            for estudiante in estudiantes:
+                if estudiante == buscar:
+                    estudiante.Informacion()
+                    encontrado = True
+                    break;
+            if not encontrado:
+                print("El estudiante no existe o no fue encontrado")
 
 
 
