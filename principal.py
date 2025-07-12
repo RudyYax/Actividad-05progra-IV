@@ -12,13 +12,14 @@ class Estudiante:
 
 estudiantes = []
 opcion = 0
-while(opcion != 5):
+while(opcion != 6):
     print("Actividad 05")
     print("Bienvenido a nuestro programa.")
     print("1.- Registrar un nuevo estudiante")
     print("2.- Mostrar lista de todos los estudiantes registrados")
     print("3.- Buscar un estudiante por su Carné")
     print("4.- Calcular el promedio de notas de todos los estudiantes")
+    print("5.- Salir del programa")
     opcion = int(input("Seleccione la opcion que desea "))
 
     match opcion:
@@ -48,3 +49,18 @@ while(opcion != 5):
             if not encontrado:
                 print("El estudiante no existe o no fue encontrado.")
 
+        case 4:
+            print("Calcular promedio")
+            if estudiantes:
+                suma = 0
+                contador = 0
+                for estudiante in estudiantes:
+                    suma += estudiante.notaFinal
+                    contador += 1
+                promedio = suma / contador
+                print(f"El promedio de notas es: {promedio:.2f}")
+            else:
+                print("No hay estudiantes para calcular promedio.")
+
+        case 5:
+            print("Gracias por utilizar nuestro programa...")
