@@ -23,4 +23,18 @@ while(opcion != 5):
 
     match opcion:
         case 1:
+            print("Ingrese el Nombre del estudiante.")
+            nombre =input("Ingrese el Nombre del estudiante: ")
+            print("Ingrese el nombre del estudiante")
+            carnet = int(input("Ingrese el carné del estudiante: "))
+            print("Ingrese la carrera del estudiante")
+            carrera = input("Ingrese la carrera del estudiante: ")
+            print("Ingrese la nota final del Estudiante")
+            NotaFinal = int(input("Ingrese la nota final del Estudiante: "))
+            estudiante = Estudiante(nombre, carnet, carrera, NotaFinal)
+            estudiantes.append(estudiante)
+            print("Estudiante registrado correctamente")
+
+
+
 
