@@ -64,3 +64,7 @@ while(opcion != 6):
 
         case 5:
             print("Gracias por utilizar nuestro programa...")
+            break
+
+        case _:
+            print("Opcion no encontrada")
