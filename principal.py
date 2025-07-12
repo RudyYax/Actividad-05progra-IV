@@ -5,7 +5,10 @@ class Estudiante:
         self.carrera = carrera
         self.notaFinal = notaFinal
     def Informacion(self):
-        print(f"Soy el estudiante {self.nombre}, con numero de carné {self.carnet} y curso la carrera de {self.carrera}" )
+        print(f"Soy el estudiante {self.nombre}, con numero de carné {self.carnet} y curso la carrera de {self.carrera}")
+
+    def Notafinal(self):
+        print (f"La Nota Final es {self.notaFinal}")
 
 
 
